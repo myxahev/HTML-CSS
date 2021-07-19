@@ -1,23 +1,15 @@
-6. В HTML-файле class=”what-we-do” добавить класс container, чтобы получилось class=”what-we-do container” для
-центрирования содержимого блока what-we-do.
-a) Блоку карточки (заголовок h4: Make your business, смотри макет ниже и p) указать значение ширины 359px.
-b) Создать ещё 2 карточки товара, как представлено в изображении макета. Итого получится 3 карточки.
-https://www.figma.com/proto/4DoJjp5UUQzCQkJcoGXblW/html%2Fcss-(Copy)?node-id=1%3A966&scaling=min-zoom
+Создать ещё 2 карточки товара, как представлено в изображении макета. Итого получится 3 карточки.
+Расположить их горизонтально и выставить равные отступы между ними.
+В подвале сайта:
 
-c) Расположить их горизонтально и выставить равные отступы между ними.
-
-7. В подвале сайта:
-a) Добавить центрирование всего контента. В подвале сайта, внутри блока footer, создать блок container для центрирования
-содержимого. Должна получиться структура:
-
-<div class=”footer”>
-    <div class=”container”>Содержимое футера</div>
-</div>
-
-b) Блоку контента (h4 “Intersted to woek” и p), в верхней части футера указать ширину 495px;
-c) Заголовку в подвале сайта указать ширину 340px.
-d) Список в нижней части подвала (номер телефона и email) расположить горизонтально и выставить равные отступы между
-ними.
+Блоку контента (h4 "Intersted to woek" и p) в верхней части футера указать ширину 495px.
+Заголовку в подвале сайта указать ширину 340px.
+Список в нижней части подвала (номер телефона и email) расположить горизонтально и выставить равные отступы между ними.
+Страница «Контакты»:
+Добавить центрирование всей контентной части страницы с помощью блока container.
+В соответствии с изображением страницы «Контакты» разместить слева блок с контактами, справа — блок формы заполнения
+данных.
+Карту сайта сделать на всю ширину container.
 
 
 <!DOCTYPE html>
@@ -41,20 +33,20 @@ d) Список в нижней части подвала (номер телеф
 
             <div class="top_info">
                 <h1 class="top_heading">Lorem, ipsum dolor.</h1>
-                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <p class="top_text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Ea velit placeat veritatis facilis impedit sint commodi illum obcaecati molestiae repudiandae.
                 </p>
             </div>
         </div>
     </div>
 
-    <div class="what-we-do">
+    <div class="what-we-do container">
         <h3 class="heading">Lorem, ipsum dolor.</h3>
 
 
         <div class="card">
-            <h4 class="heading_mini">Lorem ipsum dolor sit amet.</h4>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <h4 class="what-we-do_heading_mini">Lorem ipsum dolor sit amet.</h4>
+            <p class="what-we-do_text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Fugiat voluptate temporibus, culpa quo soluta voluptatum?
             </p>
         </div>
@@ -66,21 +58,23 @@ d) Список в нижней части подвала (номер телеф
     </div>
 
     <div class="footer">
-        <div class="footer_top">
-            <div class="footer_text">
-                <h3 class="heading">Lorem, ipsum dolor.</h3>
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, repudiandae!</p>
+        <div class="container">
+            <div class="footer_top">
+                <div class="footer_text">
+                    <h3 class="heading">Lorem, ipsum dolor.</h3>
+                    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, repudiandae!</p>
+                </div>
             </div>
-        </div>
-        <hr>
-        <div class=”footer_bottom”>
-            <ul class="footer_info">
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>+799999999999</li>
-                <li>Email@mail.ru</li>
-            </ul>
-            <div class="footer_bottom">
-                <p class="text">“Все права защищены”</p>
+            <hr>
+            <div class=”footer_bottom”>
+                <ul class="footer_info">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>+799999999999</li>
+                    <li>Email@mail.ru</li>
+                </ul>
+                <div class="footer_bottom">
+                    <p class="text">“Все права защищены”</p>
+                </div>
             </div>
         </div>
     </div>
