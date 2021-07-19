@@ -1,3 +1,8 @@
+8. Страница «Контакты»:
+a) Добавить центрирование всей контентной части страницы с помощью блока container.
+b) В соответствии с изображением страницы «Контакты» разместить слева блок с контактами, справа — блок формы заполнения
+данных.
+c) Карту сайта сделать на всю ширину container.
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,47 +15,39 @@
 </head>
 
 <body>
-    <div class="menu">
-        <a href="index.html">Главная</a>
-        <a href="Contact.html">Контакты</a>
+    <ul class="header">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="Contact.html">Контакты</a></li>
+    </ul>
+
+    <div class="contacts_header">
+        <h2 class="heading_contacts">Contact Us</h2>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, vel?</p>
     </div>
 
-    <div class="welcome">
-        <h2 class="heading_h2">Contact Us</h2>
-        <p class="paragraph">Параграф с произвольным текстом не более 10 символов</p>
-    </div>
-
-    <div class="contact">
+    <form action="#"></form>
+    <div class="contacts_info">
         <img src="https://pbs.twimg.com/media/Exozq38WQAIJKVC.jpg" alt="фото ленивца">
-        <h4 class="heading_h4">Address</h4>
-        <p class="paragraph">Параграф с произвольным текстом не более 7 символов</p>
-        <h4 class="heading_h4">Phone</h4>
+        <h4 class="heading-mini">Address</h4>
+        <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <h4 class="heading-mini">Phone</h4>
         <ul>
-            <li>номер телефона</li>
-            <li>номер телефона</li>
+            <li>+79229999999</li>
+            <li>+79339999999</li>
         </ul>
-        <h4 class="heading_h4">Online service</h4>
+        <h4 class="heading-mini">Online service</h4>
         <ul>
-            <li>
-                <a href="Contact.html">Phone1</a>
-                <br>
-                <a href="Contact.html">mail1@mail.com</a>
-            </li>
-            <li>
-                <a href="Contact.html">phone2</a>
-                <br>
-                <a href="Contact.html">mail2@mail.com</a>
-            </li>
+            <li>geekbrains.ru</li>
+            <li>email@mail.ru</li>
         </ul>
     </div>
 
-    <div class="Send_us_message">
-        <h4 class="heading_h4">Send us message</h4>
-        Full Name <input class="input_textarea" type="text" placeholder="Ivan">
-        <br>
-        Email <input class="input_textarea" type="email" placeholder="mail@mail.ru">
-        <br>
-        <textarea class="input_textarea" name="Message" id="" cols="30" rows="10"></textarea>
+    <div class="form">
+        <h4 class="heading-mini">Send us message</h4>
+        Full Name <input class="input_text type=" text" placeholder="Ivan"><br>
+        Email <input class="input_textarea" type="email" placeholder="mail@mail.ru"><br>
+        Message <br>
+        <textarea class="input_text" id="" cols="30" rows="10"></textarea>
         <button class="button-submit" type="submit">Submit</button>
     </div>
 
@@ -58,26 +55,28 @@
         src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A05a5132e3d294086f8b4ce59ee0918e96b1740d1f3b4e7ee00f17e984e8ece6f&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
         </script>
 
-    <div class="feedback">
-        <div class="questions">
-            <h3 class="heading_h3">не более 3-х слов.</h3>
-            <p class="paragraph">параграф с произвольным текстом, не более 10 слов.</p>
-        </div>
+    <div class="project">
+        <h3 class="heading">Lorem, ipsum dolor.</h3>
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, nobis.</p>
     </div>
-    <hr>
-    <div class="information">
-        <div>
-            <ul> Cписок контактов:
-                <li>номер телефона,
-                    адрес электронной почты</li>
-                <li>номер телефона,
-                    адрес электронной почты</li>
-                <li>номер телефона,
-                    адрес электронной почты</li>
-            </ul>
+
+    <div class="footer">
+        <div class="footer_top">
+            <div class="footer_text">
+                <h3 class="heading">Lorem, ipsum dolor.</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, repudiandae!</p>
+            </div>
         </div>
-        <div>
-            <p>“Все права защищены”</p>
+        <hr>
+        <div class=”footer_bottom”>
+            <ul class="footer_info">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>+799999999999</li>
+                <li>Email@mail.ru</li>
+            </ul>
+            <div class="footer_bottom">
+                <p class="text">“Все права защищены”</p>
+            </div>
         </div>
     </div>
 </body>

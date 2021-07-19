@@ -1,3 +1,25 @@
+6. В HTML-файле class=”what-we-do” добавить класс container, чтобы получилось class=”what-we-do container” для
+центрирования содержимого блока what-we-do.
+a) Блоку карточки (заголовок h4: Make your business, смотри макет ниже и p) указать значение ширины 359px.
+b) Создать ещё 2 карточки товара, как представлено в изображении макета. Итого получится 3 карточки.
+https://www.figma.com/proto/4DoJjp5UUQzCQkJcoGXblW/html%2Fcss-(Copy)?node-id=1%3A966&scaling=min-zoom
+
+c) Расположить их горизонтально и выставить равные отступы между ними.
+
+7. В подвале сайта:
+a) Добавить центрирование всего контента. В подвале сайта, внутри блока footer, создать блок container для центрирования
+содержимого. Должна получиться структура:
+
+<div class=”footer”>
+    <div class=”container”>Содержимое футера</div>
+</div>
+
+b) Блоку контента (h4 “Intersted to woek” и p), в верхней части футера указать ширину 495px;
+c) Заголовку в подвале сайта указать ширину 340px.
+d) Список в нижней части подвала (номер телефона и email) расположить горизонтально и выставить равные отступы между
+ними.
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,53 +32,56 @@
 </head>
 
 <body>
-    <div class="welcome_page">
-        <div class="menu">
-            <a href="index.html">Главная</a>
-            <a href="Contact.html">Контакты</a>
-        </div>
-
-        <div class="welcome">
-            <h1 class="heading_h1">не более 3-х слов</h1>
-            <p class="paragraph">параграф с произвольным текстом.</p>
-        </div>
-    </div>
-
-    <div class="performance">
-        <div class="title_of_the_view">
-            <h3 class="heading_h3">не более 3-х слов</h3>
-        </div>
-
-        <div class="view">
-            <h4>не более 5-ти слов.</h4>
-            <p class="paragraph">параграф с произвольным текстом не более 15 слов.</p>
-        </div>
-    </div>
-
-    <div class="description">
-        <p class="paragraph">параграф с произвольным текстом, не более 10 слов.</p>
-    </div>
-
-    <div class="feedback">
-        <div class="questions">
-            <h3 class="heading_h3">не более 3-х слов.</h3>
-            <p class="paragraph">параграф с произвольным текстом, не более 10 слов.</p>
-        </div>
-    </div>
-    <hr>
-    <div class="information">
-        <div>
-            <ul> Cписок контактов:
-                <li>номер телефона,
-                    адрес электронной почты</li>
-                <li>номер телефона,
-                    адрес электронной почты</li>
-                <li>номер телефона,
-                    адрес электронной почты</li>
+    <div class="top">
+        <div class="container">
+            <ul class="header">
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="Contact.html">Контакты</a></li>
             </ul>
+
+            <div class="top_info">
+                <h1 class="top_heading">Lorem, ipsum dolor.</h1>
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Ea velit placeat veritatis facilis impedit sint commodi illum obcaecati molestiae repudiandae.
+                </p>
+            </div>
         </div>
-        <div>
-            <p>“Все права защищены”</p>
+    </div>
+
+    <div class="what-we-do">
+        <h3 class="heading">Lorem, ipsum dolor.</h3>
+
+
+        <div class="card">
+            <h4 class="heading_mini">Lorem ipsum dolor sit amet.</h4>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Fugiat voluptate temporibus, culpa quo soluta voluptatum?
+            </p>
+        </div>
+    </div>
+
+    <div class="project">
+        <h3 class="heading">Lorem, ipsum dolor.</h3>
+        <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam, nobis.</p>
+    </div>
+
+    <div class="footer">
+        <div class="footer_top">
+            <div class="footer_text">
+                <h3 class="heading">Lorem, ipsum dolor.</h3>
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, repudiandae!</p>
+            </div>
+        </div>
+        <hr>
+        <div class=”footer_bottom”>
+            <ul class="footer_info">
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>+799999999999</li>
+                <li>Email@mail.ru</li>
+            </ul>
+            <div class="footer_bottom">
+                <p class="text">“Все права защищены”</p>
+            </div>
         </div>
     </div>
 </body>

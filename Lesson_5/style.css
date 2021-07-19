@@ -1,10 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    }
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+    }   
+
+.menu{
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
 body{
     font-family: sans-serif;
 }
 
 
-.paragraph{
+.text{
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
@@ -13,8 +32,14 @@ body{
 .heading_h1{
     font-size: 64px;
     color: #1F3F68;
+    width: 510px;
 }
-
+.text_h1{
+    font-size: 16px;
+    line-height: 26px;
+    color: #1F3F68;
+    width: 425px;
+}
 
 .heading_h2{
     font-weight: 500;
@@ -29,14 +54,14 @@ body{
 }
 
 
-.heading_h4{
+.heading_mini{
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
 }
 
 
-.input_textarea{
+.input_text{
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
