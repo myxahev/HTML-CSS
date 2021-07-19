@@ -10,7 +10,6 @@
 
 .header{
     height: 100px;
-    border: 1px solid #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -100,13 +99,11 @@ body{
     width: 340px;
 }
 
-.footer_bottom{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 
 .footer_info{
-    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
 }
 
 .contacts{
