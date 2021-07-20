@@ -33,6 +33,8 @@ body{
     opacity: 0.6;
 }
 
+
+
 .top_box {
     display: flex;
     flex-direction: column;
@@ -107,6 +109,13 @@ body{
     margin-bottom: 14px;
 }
 
+.text_project {
+    width: 75%;
+    margin: 32px auto 64px;
+    color: #222222;
+    opacity: 1;
+    text-align: center;
+}
 
 .input_text{
     border: 1px solid #356EAD;
@@ -157,6 +166,43 @@ body{
     letter-spacing: 0.05em;
     color: #5A98D0;
     text-decoration: none;
+}
+
+.project {
+
+}
+
+.project__item {
+    position: relative;
+    flex-grow: 1;
+    
+}
+
+.project__item_margin {
+    margin-right: 32px;
+}
+
+.project__img {
+    width: 100%;
+}
+
+.project__text {
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    position: absolute;
+    top: 64px;
+    right: 64px;
+
+}
+
+.project__parent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+
 }
 
 .footer_top{
