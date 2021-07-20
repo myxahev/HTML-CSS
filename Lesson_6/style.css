@@ -9,29 +9,58 @@
     }   
 
 .header{
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 40px;
-    padding-right: 40px;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
 }
 
 body{
     font-family: sans-serif;
 }
-
+.top {
+    height: 768px;
+    background: linear-gradient(0deg, 
+    #EBF3FB 8.84%, 
+    rgba(152, 195, 232, 0) 31.12%);
+}
 
 .text{
     font-size: 16px;
     line-height: 26px;
     color: #1F3F68;
+    letter-spacing: 0.05em;
+    opacity: 0.6;
 }
+
+.top_box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    padding-top: 42px;
+
+}
+
+.top_info {
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/top_back.svg);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
 
 .top_heading{
     font-size: 64px;
     color: #1F3F68;
     width: 510px;
+    font-weight: 300;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    margin-bottom: 32px;
 }
 .top_text{
     font-size: 16px;
@@ -39,6 +68,26 @@ body{
     color: #1F3F68;
     width: 425px;
 }
+
+.top_buttom {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 71px;
+}
+
+.what-we-do {
+    padding-top: 64px;
+}
+
 .what-we-do_heading_mini{
     font-size: 20px;
     line-height: 30px;
@@ -56,6 +105,8 @@ body{
     font-size: 20px;
     line-height: 30px;
     color: #1F3F68;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
 }
 
 
@@ -79,15 +130,23 @@ body{
     text-transform: uppercase;
 }
 
-.content{
+.card_box{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 64px;
 }
 
 .card{
     height: 100px;
     width: 100px;
     flex-grow: 1;
+}
+
+.card__link {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
 }
 
 .footer_top{
