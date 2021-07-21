@@ -341,6 +341,7 @@ hr {
 
     .card {
         margin-bottom: 32px;
+        width: 100%;
     }
 }
 
@@ -398,7 +399,7 @@ hr {
 
     .card_box {
         padding-top: 32px;
-
+        display: block;
     }
 
     .card {
