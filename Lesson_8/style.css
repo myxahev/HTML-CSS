@@ -310,6 +310,30 @@ hr {
     opacity: 0.4;
 }
 
+.top_info_contact {
+    padding-top: 115px;
+    flex-grow: 1;
+    background-image: url(img/top_back_contact.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contact_top_heading {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 74px;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.contact_top_text {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
 .contacts{
     display: flex;
     flex-wrap: wrap;
