@@ -119,12 +119,15 @@ body{
 }
 
 .input_text{
+    opacity: 0.4;
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
-    opacity: 0.4;
 }
 
+.input_text_message {
+    width: 428px;
+}
 
 .button-submit{
     background: #5A98D0;
@@ -310,6 +313,13 @@ hr {
     opacity: 0.4;
 }
 
+.top_info_contact_header {
+    width: 100%;
+    min-height: 471px;
+    background: none;
+
+}
+
 .top_info_contact {
     padding-top: 115px;
     flex-grow: 1;
@@ -342,8 +352,44 @@ hr {
 .contacts_info{
     flex-grow: 1;
 }
+
+.heading_contact {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    margin-bottom: 24px;
+}
+
+.heading_contact_message {
+    margin-bottom: 48px;
+}
+
+ .text_contact {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    opacity: 0.6;
+    margin-bottom: 40px;
+ }
+
 .form{
     flex-grow: 2;
+}
+
+.form_contact {
+    padding: 56px;
+    background: #FFFFFF;
+    box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+}
+
+.map {
+    margin-top: 98px;
+    margin-bottom: 112px;
 }
 
 @media (max-width: 1024) {
