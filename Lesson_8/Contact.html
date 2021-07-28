@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet">
 </head>
 
@@ -27,33 +30,35 @@
     </div>
 
     <div class="container">
-        <form action="#"></form>
         <div class="contacts">
             <div class="contacts_info">
-                <img src="img/contact_photo.svg" alt="фото">
+                <img class="contacts_info_img" src="img/contact_photo.svg" alt="фото">
                 <h4 class="heading-mini heading_contact">Address</h4>
-                <p class="text text_contact">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                <p class="text text_contact">Id convallis placerat sit sed duis id amet volutpat quam a,
+                    pharetra.
+                </p>
                 <h4 class="heading-mini heading_contact">Phone</h4>
-                <ul>
-                    <li><a href="tel: +74951234567">+7 (495) 123-45-67</a></li>
-                    <li><a href="tel: +74951234568">+7 (495) 123-45-68</a></li>
+                <ul class="text text_contact contact_link">
+                    <li class="contact_link_line"><img class="contact_link_icon" src="img/phone.png" alt=""><a href="tel: +74951234567">+7 (495) 123-45-67</a></li>
+                    <li class="contact_link_line"><img class="contact_link_icon" src="img/phone.png" alt=""><a href="tel: +74951234568">+7 (495) 123-45-68</a></li>
                 </ul>
                 <h4 class="heading-mini heading_contact">Online service</h4>
-                <ul>
-                    <li><a href="geekbrains.ru">geekbrains.ru</a></li>
-                    <li><a href="mailto: example@mail.ru">example@mail.ru</a></li>
+                <ul class="text text_contact contact_link">
+                    <li class="contact_link_line"><img class="contact_link_icon" src="img/web.png" alt=""><a href="geekbrains.ru">geekbrains.ru</a></li>
+                    <li class="contact_link_line"><img class="contact_link_icon" src="img/message.png" alt=""><a href="mailto: example@mail.ru">example@mail.ru</a></li>
                 </ul>
             </div>
-
             <div class="form form_contact">
                 <h4 class="heading-mini heading_contact heading_contact_message">Send us message</h4>
-                Full Name <br>
-                <input class="input_text" type="text" placeholder="Ivan"><br>
-                Email <br>
-                <input class="input_text" type="email" placeholder="mail@mail.ru"><br>
-                Message <br>
-                <textarea class="input_text input_text_message" id="" cols="30" rows="10"></textarea><br>
-                <button class="button-submit" type="submit">Submit</button>
+                <form action="#">
+                    <label class="heading_contact heading_contact_message heading_contact_form">Full Name</label><br>
+                    <input class="input_text" type="text" placeholder="Ivan"><br>
+                    <label class="heading_contact heading_contact_message heading_contact_form">Email</label><br>
+                    <input class="input_text" type="email" placeholder="mail@mail.ru"><br>
+                    <label class="heading_contact heading_contact_message heading_contact_form">Message</label><br>
+                    <textarea class="input_text input_text_message" id="" cols="30" rows="10"></textarea><br>
+                    <button class="button-submit" type="submit">Submit</button>
+                </form>
             </div>
         </div>
 

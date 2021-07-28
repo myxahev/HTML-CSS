@@ -16,7 +16,7 @@
 }
 
 body{
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 .top {
     min-height: 768px;
@@ -118,27 +118,48 @@ body{
     text-align: center;
 }
 
+
 .input_text{
+    width: 428px;
+    height: 72px;
     opacity: 0.4;
     border: 1px solid #356EAD;
     box-sizing: border-box;
     border-radius: 10px;
+    margin-bottom: 32px;
+    padding: 21px 42px;
+}
+
+.input_text::placeholder{
+    font-weight: 300;
+    font-size: 16px;
+    color: #1F3F68;
+    letter-spacing: 0.04em;
+    line-height: 30px;
 }
 
 .input_text_message {
-    width: 428px;
+    height: 144px;
+    margin-bottom: 72px;
+    resize: none;
 }
 
 .button-submit{
+    width: 428px;
+    height: 72px;
     background: #5A98D0;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
+    background: #5A98D0;
     font-weight: 500;
     font-size: 16px;
     line-height: 26px;
     text-align: center;
     color: #FFFFFF;
     text-transform: uppercase;
+    letter-spacing: 0.04em;
+    border: none;
+
 }
 
 .card_box{
@@ -241,6 +262,7 @@ body{
     text-align: left;
     color: #fff;
     margin-bottom: 32px;
+    font-weight: 400;
 }
 
 .text_footer {
@@ -321,11 +343,13 @@ hr {
 }
 
 .top_info_contact {
-    padding-top: 115px;
+    margin-top: 50px;
+    padding-top: 100px;
     flex-grow: 1;
     background-image: url(img/top_back_contact.svg);
     background-repeat: no-repeat;
     background-size: 100%;
+    height: 250px;
 }
 
 .contact_top_heading {
@@ -334,6 +358,7 @@ hr {
     line-height: 74px;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    margin-bottom: 16px;
 }
 
 .contact_top_text {
@@ -347,10 +372,38 @@ hr {
 .contacts{
     display: flex;
     flex-wrap: wrap;
+    padding: 65px 0 110px;
 }
 
 .contacts_info{
     flex-grow: 1;
+    text-decoration: none;
+    margin-bottom: 150px;
+    
+}
+
+.contacts_info_img{
+    margin: 70px 0 56px;
+}
+
+.contact_link {
+
+    outline: none;
+    text-decoration: none;
+    list-style-type: none;
+
+
+}
+
+.contact_link_line {
+    position: relative;
+    padding: 8px 0 8px 40px;
+}
+
+.contact_link_icon {
+    position: absolute;
+    left: 0;
+    top: 13px;
 }
 
 .heading_contact {
@@ -360,10 +413,20 @@ hr {
     letter-spacing: 0.04em;
     color: #1F3F68;
     margin-bottom: 24px;
+    text-transform: uppercase;
 }
 
 .heading_contact_message {
     margin-bottom: 48px;
+}
+
+.heading_contact_form {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.8;
+    margin-bottom: 8px;
+    display: block;
+    text-transform: none;
 }
 
  .text_contact {
@@ -374,6 +437,16 @@ hr {
     color: #1F3F68;
     opacity: 0.6;
     margin-bottom: 40px;
+    max-width: 300px;
+ }
+
+ .text_contact a {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.04em;
+    color: #1F3F68;
+    text-decoration: none;
  }
 
 .form{
@@ -385,6 +458,8 @@ hr {
     background: #FFFFFF;
     box-shadow: 5px 10px 50px rgba(16, 112, 177, 0.2);
     border-radius: 10px;
+    max-width: 540px;
+    box-sizing: border-box;
 }
 
 .map {
